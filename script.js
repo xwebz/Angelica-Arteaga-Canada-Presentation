@@ -394,9 +394,9 @@ menuButton.addEventListener('click', function(event){
     }
     // Date and time depending on Language and Event Location
     const txt19 = document.getElementById('text19');
-    var TimeNorthYorkEnglish = "<span>" + "April 23rd, 2023" + "<br>" + "09:00 PM" + "</span>" ;
-    var TimeNorthYorkFrench  = "<span>" + "Samedi, 23 avril 2023" + "<br>" + "09h30" + "</span>";
-    var TimeNorthYorkSpanish = "<span>" + "Sábado, 23 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    var TimeNorthYorkEnglish = "<span>" + "April 13th, 2023" + "<br>" + "10:00 AM" + "</span>" ;
+    var TimeNorthYorkFrench  = "<span>" + "13 avril 2023" + "<br>" + "10:00 AM" + "</span>";
+    var TimeNorthYorkSpanish = "<span>" + "13 de abril de 2023" + "<br>" + "10:00 AM" + "</span>";
     if (language === 'english' && location === 'North York'){
         txt19.innerHTML = TimeNorthYorkEnglish;
     }
@@ -406,9 +406,9 @@ menuButton.addEventListener('click', function(event){
     if (language === 'spanish' && location === 'North York'){
         txt19.innerHTML = TimeNorthYorkSpanish;
     }
-    var TimeCalgaryEnglish = "<span>" + "April 24th, 2023" + "<br>" + "09:30 AM" + "</span>" ;
-    var TimeCalgaryFrench  = "<span>" + "Samedi, 24 avril 2023" + "<br>" + "09h30" + "</span>";
-    var TimeCalgarySpanish = "<span>" + "Sábado, 24 de abril de 2023" + "<br>" + "9:30 AM" + "</span>";
+    var TimeCalgaryEnglish = "<span>" + "April 15th, 2023" + "<br>" + "10:00 - 12:00" + "</span>" ;
+    var TimeCalgaryFrench  = "<span>" + "15 avril 2023" + "<br>" + "10:00 - 12:00" + "</span>";
+    var TimeCalgarySpanish = "<span>" + "15 de abril de 2023" + "<br>" + "10:00 - 12:00" + "</span>";
     if (language === 'english' && location === 'Calgary'){
         txt19.innerHTML = TimeCalgaryEnglish;
     }
@@ -430,9 +430,9 @@ menuButton.addEventListener('click', function(event){
     if (language === 'spanish' && location === 'Montreal'){
         txt19.innerHTML = TimeMontrealSpanish;
     }
-    var TimeOrangevilleEnglish = "<span>" + "April 26th, 2023" + "<br>" + "01:00 PM" + "</span>" ;           // Pending Date Only
-    var TimeOrangevilleFrench  = "<span>" + "Samedi, 26 avril 2023" + "<br>" + "13h00" + "</span>";          // Pending Date Only
-    var TimeOrangevilleSpanish = "<span>" + "Sábado, 26 de abril de 2023" + "<br>" + "01:00 PM" + "</span>"; // Pending Date Only
+    var TimeOrangevilleEnglish = "<span>" + "April 12th, 2023" + "<br>" + "01:00 PM" + "</span>" ;           // Pending Date Only
+    var TimeOrangevilleFrench  = "<span>" + "12 avril 2023" + "<br>" + "13h00" + "</span>";          // Pending Date Only
+    var TimeOrangevilleSpanish = "<span>" + "12 de abril de 2023" + "<br>" + "01:00 PM" + "</span>"; // Pending Date Only
     if (language === 'english' && location === 'Orangeville'){
         txt19.innerHTML = TimeOrangevilleEnglish;
     }
