@@ -406,9 +406,9 @@ menuButton.addEventListener('click', function(event){
     if (language === 'spanish' && location === 'North York'){
         txt19.innerHTML = TimeNorthYorkSpanish;
     }
-    var TimeCalgaryEnglish = "<span>" + "April 15th, 2023" + "<br>" + "10:00 - 12:00" + "</span>" ;
-    var TimeCalgaryFrench  = "<span>" + "15 avril 2023" + "<br>" + "10:00 - 12:00" + "</span>";
-    var TimeCalgarySpanish = "<span>" + "15 de abril de 2023" + "<br>" + "10:00 - 12:00" + "</span>";
+    var TimeCalgaryEnglish = "<span>" + "April 15th, 2023" + "<br>" + "10:00 AM - 12:00 PM" + "</span>" ;
+    var TimeCalgaryFrench  = "<span>" + "15 avril 2023" + "<br>" + "10:00 AM - 12:00 PM" + "</span>";
+    var TimeCalgarySpanish = "<span>" + "15 de abril de 2023" + "<br>" + "10:00 AM - 12:00 PM" + "</span>";
     if (language === 'english' && location === 'Calgary'){
         txt19.innerHTML = TimeCalgaryEnglish;
     }
