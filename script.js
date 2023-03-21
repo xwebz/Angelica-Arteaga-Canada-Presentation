@@ -168,14 +168,22 @@ menuButton.addEventListener('click', function(event){
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxflFT8VhssRLb_lWTTlkp8Icvc_r2ydp5XPoUsKM9GSk2NNB0wcQje2INFKRYvFAv4/exec';
         const form = document.forms['submit-to-google-sheet'];
         form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                form.reset()
-                //console.log('Success!', response)
-                alert(`Confirmation Successful!`)
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault();
+            const d1 = form['name'].value;
+            const d2 = form['email'].value;
+            const d3 = form['phone'].value;
+            const d4 = form['city'].value;
+            if (d1 == "" || d2 == "" || d3 == "" || d4 == ""){
+                alert(`ERROR! Fill all Data Required`);
+            }
+            else {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                      form.reset()
+                      alert(`Confirmation Successful!`)
+                  })
+                  .catch(error => console.error('Error!', error.message))
+              }
         });
     }
     if (language === 'french'){
@@ -276,14 +284,23 @@ menuButton.addEventListener('click', function(event){
         const form = document.forms['submit-to-google-sheet'];
         form.addEventListener('submit', e => {
             e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => {
-                  form.reset()
-                  //console.log('Success!', response)
-                  alert(`Confirmation Réussie!`)
-              })
-              .catch(error => console.error('Error!', error.message))
-          });
+            const d1 = form['name'].value;
+            const d2 = form['email'].value;
+            const d3 = form['phone'].value;
+            const d4 = form['city'].value;
+
+            if (d1 == "" || d2 == "" || d3 == "" || d4 == ""){
+                alert(`ERREUR! Champs requis manquants`);
+            }
+            else {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                      form.reset()
+                      alert(`Confirmation Réussie!`);
+                  })
+                  .catch(error => console.error('Error!', error.message))
+              }
+        });
     }
     if (language === 'spanish'){
         mainContentEnglish.remove();
@@ -383,14 +400,23 @@ menuButton.addEventListener('click', function(event){
         const form = document.forms['submit-to-google-sheet'];
         form.addEventListener('submit', e => {
             e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => {
-                  form.reset()
-                  //console.log('Success!', response)
-                  alert(`Confirmación Exitosa!`)
-              })
-              .catch(error => console.error('Error!', error.message))
-          });
+            const d1 = form['name'].value;
+            const d2 = form['email'].value;
+            const d3 = form['phone'].value;
+            const d4 = form['city'].value;
+
+            if (d1 == "" || d2 == "" || d3 == "" || d4 == ""){
+                alert(`ERROR! Completa el Registro`);
+            }
+            else {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                      form.reset()
+                      alert(`Confirmación Exitosa!`);
+                  })
+                  .catch(error => console.error('Error!', error.message))
+              }
+        });
     }
     // Date and time depending on Language and Event Location
     const txt19 = document.getElementById('text19');
