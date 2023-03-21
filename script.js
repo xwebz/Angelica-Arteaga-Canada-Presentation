@@ -444,9 +444,9 @@ menuButton.addEventListener('click', function(event){
     }
     // Show Event Location depending on which city the User Selected
     var addressNorthYork   = "Domenica DiLuca Community Recreation Centre Stanley Park 25 - Stanley Rd. North York"; // Pending Validation
-    var addressCalgary     = "The Winston Golf Club 2502 6th St. NE Calgary";                                 // Pending Validation
-    var addressMontreal    = "Crew Collective and CAfe 360 Rue Saint-Jacques, G101 Montréal, QC H2Y 1P5";     // Pending Validation
-    var addressOrangeville = "Rustik Local Bistro (519) 940-3108";                                            // Pending Validation
+    var addressCalgary     = "The Winston Golf Club 2502 6th St. NE Calgary";                                        // Pending Validation
+    var addressMontreal    = "Crew Collective and CAfe 360 Rue Saint-Jacques, G101 Montréal, QC H2Y 1P5";            // Pending Validation
+    var addressOrangeville = "Rustik Local Bistro 199 Broadway Orangeville Ontario, Canada L9W 1K2";                 // Pending Validation
     const txt20 = document.getElementById('text20');
     if (location === 'North York'){
         txt20.textContent = addressNorthYork;
